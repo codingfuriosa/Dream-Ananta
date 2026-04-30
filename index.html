@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dream Ananta — Register Your Interest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<section class="hero">
+
+  <picture>
+    <source media="(max-width: 768px)" srcset="Images/Portrait.jpg">
+    <source media="(max-width: 1024px)" srcset="Images/tablet.jpg">
+    <img src="Images/Landscape.jpg" alt="Hero Image" class="hero-img">
+  </picture>
+
+  <!-- Floating call button — DESKTOP ONLY, top-right of hero -->
+  <a href="tel:+919513436685" class="hero-call-cta" aria-label="Call us at +91 9513436685">
+    <span class="call-icon">
+      <i class="fas fa-phone"></i>
+      <span class="ring r1"></span>
+      <span class="ring r2"></span>
+    </span>
+    <span class="hero-call-number">+91 9513436685</span>
+  </a>
+
+</section>
+
+
+<section class="enquiry-section">
+
+  <div class="enquiry-container">
+
+    <h2 class="form-title">Register Your Interest</h2>
+    <span class="form-underline"></span>
+
+    <form class="enquiry-form" novalidate>
+
+      <div class="form-grid">
+        <input type="text" id="f-name" placeholder="Full Name" required>
+        <input type="tel"  id="f-phone" placeholder="Phone Number" required>
+        <input type="email" id="f-email" placeholder="Email Address" required>
+        <input type="text" id="f-message" placeholder="Message">
+      </div>
+
+      <p class="form-error" role="alert" aria-live="polite"></p>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="agree" checked required>
+        <label for="agree">
+          I agree to be contacted and allow the use of my details for communication purposes.
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Enquiry</button>
+
+    </form>
+
+    <!-- CTA -->
+    <div class="cta-row">
+      <a href="tel:+919513436685" class="cta secondary">
+        <span class="call-icon">
+          <i class="fas fa-phone"></i>
+          <span class="ring r1"></span>
+          <span class="ring r2"></span>
+        </span>
+        <span>+91 9513436685</span>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+  </div>
+</footer>
+
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

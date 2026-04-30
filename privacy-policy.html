@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — This Property</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #7c3aed;
+  --purple-light: #a78bfa;
+  --ink: #1a1a22;
+  --muted: #5a5a66;
+  --line: #ececf2;
+  --bg: #fafafc;
+  --paper: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+.back-home i { font-size: 11px; transition: transform 0.3s ease; }
+.back-home:hover { color: var(--purple); }
+.back-home:hover i { transform: translateX(-3px); }
+
+/* =========================
+   HERO
+========================= */
+.policy-hero {
+  text-align: center;
+  padding: 90px 24px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.policy-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 0%, rgba(124, 58, 237, 0.10), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 30%, rgba(167, 139, 250, 0.08), transparent 70%);
+  pointer-events: none;
+}
+.eyebrow {
+  display: inline-block;
+  font-size: 11.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--purple);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.policy-hero h1 {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+.divider {
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin: 0 auto 18px;
+  background: linear-gradient(90deg, var(--purple), var(--purple-light));
+  border-radius: 2px;
+}
+.policy-hero .updated {
+  color: var(--muted);
+  font-size: 13.5px;
+  letter-spacing: 0.6px;
+}
+
+/* =========================
+   POLICY BODY
+========================= */
+.policy-wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 40px 100px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+/* TOC */
+.toc {
+  position: sticky;
+  top: 90px;
+  border-left: 1px solid var(--line);
+  padding-left: 22px;
+}
+.toc-label {
+  font-size: 10.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.toc ul { list-style: none; }
+.toc li { margin-bottom: 8px; }
+.toc a {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.toc a:hover {
+  color: var(--purple);
+  transform: translateX(3px);
+}
+
+/* PAPER */
+.paper {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 64px 80px;
+  box-shadow:
+    0 1px 3px rgba(20, 20, 40, 0.04),
+    0 30px 60px -40px rgba(20, 20, 40, 0.20);
+}
+
+.paper section {
+  margin-bottom: 42px;
+  scroll-margin-top: 90px;
+}
+.paper section:last-child { margin-bottom: 0; }
+
+.paper h2 {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-bottom: 14px;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.paper h2 .num {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--purple);
+  background: rgba(124, 58, 237, 0.08);
+  padding: 4px 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+.paper p {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 14px;
+  max-width: 75ch;
+}
+.paper p:last-child { margin-bottom: 0; }
+
+.paper ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+.paper li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 16px;
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.paper li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--purple-light);
+}
+
+.paper strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* CONTACT CARD */
+.contact-card {
+  margin-top: 22px;
+  padding: 22px 26px;
+  background: linear-gradient(180deg, rgba(124,58,237,0.04), rgba(124,58,237,0.01));
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  border-radius: 10px;
+}
+.contact-card .row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.contact-card .row:last-child { margin-bottom: 0; }
+.contact-card .row i {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(124, 58, 237, 0.12);
+  color: var(--purple);
+  border-radius: 50%;
+  font-size: 12px;
+}
+.contact-card a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+.contact-card a:hover {
+  color: var(--purple);
+  border-bottom-color: var(--purple);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  background: #0a0a0f;
+  color: #cfcfd6;
+  padding: 38px 24px 32px;
+  text-align: center;
+  position: relative;
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7c3aed, transparent);
+}
+.footer-link {
+  position: relative;
+  color: #d6d6dd;
+  text-decoration: none;
+  font-size: 13.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 2px;
+  transition: color 0.3s ease;
+}
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #a78bfa, transparent);
+  transition: transform 0.4s ease;
+}
+.footer-link:hover { color: #fff; }
+.footer-link:hover::after { transform: translateX(-50%) scaleX(1); }
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .policy-wrap {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .toc {
+    position: static;
+    border-left: none;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+  }
+  .toc ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+  }
+  .toc li { margin-bottom: 0; }
+}
+
+@media (max-width: 768px) {
+  .topbar-inner { padding: 14px 20px; }
+  .brand { font-size: 18px; letter-spacing: 1.2px; }
+
+  .policy-hero { padding: 60px 20px 40px; }
+  .policy-hero h1 { font-size: 38px; }
+
+  .policy-wrap { padding: 20px 20px 60px; }
+  .paper { padding: 32px 24px; border-radius: 10px; }
+  .paper h2 { font-size: 22px; gap: 10px; }
+  .paper h2 .num { font-size: 10.5px; padding: 3px 8px; }
+  .paper p, .paper li { font-size: 14px; }
+}
+
+/* Reveal on load */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s cubic-bezier(.22,.61,.36,1) forwards;
+}
+.fade-up.d1 { animation-delay: 0.1s; }
+.fade-up.d2 { animation-delay: 0.2s; }
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">Terms &amp; Conditions</a>
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="policy-hero">
+  <span class="eyebrow fade-up">Legal</span>
+  <h1 class="fade-up d1">Privacy Policy</h1>
+  <span class="divider fade-up d1"></span>
+  </section>
+
+<!-- BODY -->
+<div class="policy-wrap">
+
+  <!-- TOC -->
+  <aside class="toc">
+    <div class="toc-label">On this page</div>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#collect">Information We Collect</a></li>
+      <li><a href="#use">How We Use Your Data</a></li>
+      <li><a href="#share">Sharing &amp; Disclosure</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#security">Data Security</a></li>
+      <li><a href="#changes">Policy Changes</a></li>
+    </ul>
+  </aside>
+
+  <!-- PAPER -->
+  <article class="paper">
+
+    <section id="intro">
+      <h2><span class="num">01</span>Introduction</h2>
+      <p>At <strong>This Property</strong>, your privacy is fundamental to the trust we share. This Privacy Policy outlines how we collect, use, store, and protect the personal information you provide when expressing interest in our residential project, visiting our website, or interacting with our team.</p>
+      <p>By submitting an enquiry or using this site, you consent to the practices described here. We encourage you to read this policy carefully.</p>
+    </section>
+
+    <section id="collect">
+      <h2><span class="num">02</span>Information We Collect</h2>
+      <p>We collect information that helps us understand and respond to your interest in This Property. This includes:</p>
+      <ul>
+        <li><strong>Contact details</strong> — your full name, phone number, and email address provided via our enquiry form.</li>
+        <li><strong>Communication content</strong> — any message, preference, or note you choose to share with us.</li>
+        <li><strong>Technical data</strong> — basic browser, device, and IP information automatically logged when you visit our website.</li>
+      </ul>
+    </section>
+
+    <section id="use">
+      <h2><span class="num">03</span>How We Use Your Data</h2>
+      <p>Your information is used solely to support your interest in our project. Specifically, we use it to:</p>
+      <ul>
+        <li>Respond to your enquiries and arrange site visits or virtual walkthroughs.</li>
+        <li>Share relevant project updates, pricing details, and launch information.</li>
+        <li>Improve our services, communications, and website experience.</li>
+        <li>Comply with applicable legal and regulatory obligations.</li>
+      </ul>
+    </section>
+
+    <section id="share">
+      <h2><span class="num">04</span>Sharing &amp; Disclosure</h2>
+      <p>We do not sell, rent, or trade your personal information. Your data may be shared only with:</p>
+      <ul>
+        <li>Authorised members of our sales, marketing, and customer-relations teams.</li>
+        <li>Trusted service partners who assist with CRM, communications, or hosting — bound by strict confidentiality.</li>
+        <li>Government or regulatory authorities, when legally required.</li>
+      </ul>
+    </section>
+
+    <section id="cookies">
+      <h2><span class="num">05</span>Cookies &amp; Analytics</h2>
+      <p>Our website uses essential cookies to ensure the site functions correctly, and analytics cookies to help us understand how visitors engage with our pages. You may disable cookies via your browser settings; however, certain features may not work as intended.</p>
+    </section>
+
+    <section id="rights">
+      <h2><span class="num">06</span>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you.</li>
+        <li>Request correction or deletion of inaccurate or outdated information.</li>
+        <li>Withdraw your consent for marketing communications at any time.</li>
+        <li>Raise concerns regarding the handling of your information.</li>
+      </ul>
+      <p>To exercise any of these rights, please reach out using the contact details below.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">07</span>Data Security</h2>
+      <p>We employ industry-standard administrative, technical, and physical safeguards to protect your information from unauthorised access, alteration, or disclosure. While no system can guarantee absolute security, we are committed to maintaining the highest reasonable standards of protection.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">08</span>Changes to These Terms</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. The latest version will always be available on this page.</p>
+    </section>
+  </article>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+</footer>
+
+</body>
+</html>

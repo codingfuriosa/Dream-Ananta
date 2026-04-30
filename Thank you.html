@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0f;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+/* =========================
+   TITLE
+========================= */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   UNDERLINE
+========================= */
+.underline {
+  width: 70px;
+  height: 2px;
+  margin: 20px auto 30px;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+
+  transform: scaleX(0);
+  animation: lineGrow 0.8s ease forwards 0.3s;
+}
+
+/* =========================
+   TEXT
+========================= */
+p {
+  color: #bbb;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+
+  background: #7c3aed;
+  color: #fff;
+
+  border: none;
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineGrow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Thank You</h1>
+  <div class="underline"></div>
+  <p>Your enquiry has been received. Our team will connect with you shortly.</p>
+
+  <button class="btn" onclick="goHome()">Back to Home</button>
+</div>
+
+<script>
+function goHome() {
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
